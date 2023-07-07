@@ -1,11 +1,12 @@
-
+import Layout from './componentes/Layout';
+import './App.css'
 
 function App() {
 
   return (
-    <div>
-
-    </div>
+    <>
+      <Layout/>
+    </>
   )
 }
 
