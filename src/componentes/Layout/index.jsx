@@ -1,6 +1,7 @@
 import NavBar from '../NavBar';
 import ItemListContainer from '../ItemListContainer';
 
+
 const Layout = () => {
   return (
     <div>
@@ -10,7 +11,8 @@ const Layout = () => {
 
         <main>
             <ItemListContainer 
-            title={"Bienvenido a BearDrops"}/>
+            greeting={"Bienvenido a BearDrops"}
+            />
         </main>
 
         <footer>

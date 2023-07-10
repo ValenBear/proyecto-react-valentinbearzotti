@@ -1,19 +1,62 @@
-nav{
+
+nav .div-navs{ 
+    display: flex;
     background-color: black;
+    width: 100%;
+    height: 7.5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .div-navs .dropdown button{
+    background-color: black;
+    border: none;
+    height: 4vh;
+}
+
+
+nav .div-navs button{
+    background-color: black;
+    border: none;
+    height: 4vh;
+    font-size: 19px;
+}
+
+nav .div-navs button:hover{
+    background-color: #000000;
+    border: none;
+    color: rgb(20, 104, 34);
+}
+
+nav .div-navp{
+    display: flex;
+    align-items: center;
+    background-color: rgb(20, 104, 34);
     margin: 0;
     padding: 0;
     display: flex;
     flex-flow: wrap row;
     justify-content: space-between;
+    width: 100%;
+    height: 10vh;
 }
 
-nav .div-logo{
+nav .div-navp .div-navp-nombre{
     display: flex;
+    flex-flow: wrap row;
+    align-items: center;
 }
 
-nav .div-logo h4{
-    font-family: 'Fjalla One', sans-serif;
+nav .div-navp h4{
+    font-family: 'Caprasimo', cursive;
     color: #fff;
-    font-size: 30px;
+    font-size: 60px;
 }
 
+nav .div-navp .logo{
+    margin-left: 1vw;
+    margin-right: 0.2vw;
+    border-radius: 100%;
+    height: 70px;
+    width: auto;
+}

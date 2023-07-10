@@ -4,8 +4,9 @@ const ItemListContainer = (props) => {
   return (
     <div>
         <h1>
-            {props.title}
+            {props.greeting} 
         </h1>
+
     </div>
   )
 }
