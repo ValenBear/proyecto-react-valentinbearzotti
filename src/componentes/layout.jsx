@@ -1,5 +1,5 @@
-import NavBar from '../NavBar';
-import ItemListContainer from '../ItemListContainer';
+import NavBar from './navBar';
+import ItemListContainer from './itemListContainer';
 
 
 const Layout = () => {
@@ -10,9 +10,7 @@ const Layout = () => {
         </header>
 
         <main>
-            <ItemListContainer 
-            greeting={"Bienvenido a BearDrops"}
-            />
+            <ItemListContainer/>
         </main>
 
         <footer>

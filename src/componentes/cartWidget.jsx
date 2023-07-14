@@ -1,4 +1,4 @@
-import './CartWidget.css'
+import '../sass/style.css';
 
 
 const CartWidget = () => {

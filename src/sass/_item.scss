@@ -1,0 +1,32 @@
+.div-producto{
+    width: 350px;
+    height: 550px;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(104, 165, 115);
+    box-shadow: 1.5px 1.5px rgba(0,0,0,25);
+    h4{
+        margin-top: 10px;
+        font-size: 24px;
+        text-align: center;
+        font-family: 'Caprasimo', cursive;
+        color: rgba(255, 255, 255, 0.950);
+        text-shadow: 1.5px 1.5px black;
+    }
+    .prd-precio{
+        text-align: center;
+        font-size: 17.5px;
+        color: rgba(255, 255, 255, 0.950);
+        margin: 0;
+        text-shadow: 1px 1px black;
+    }
+    img{
+        height: auto;
+        width: 300px;
+        box-shadow: 1.5px 1.5px rgba(0,0,0,25);
+    }
+}

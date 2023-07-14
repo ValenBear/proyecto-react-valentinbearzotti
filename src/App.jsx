@@ -1,6 +1,5 @@
-import Layout from './componentes/Layout';
-import './App.css';
-
+import Layout from './componentes/layout';
+import './sass/style.css';
 
 
 function App() {
