@@ -2,6 +2,7 @@ const productos = [
     {   
         id: "1", 
         nombre:"Nike Golf", 
+        marca:"Nike",
         descripcion:"parte inferior", 
         descripcion2:"pantalon", 
         precio:9890, 
@@ -11,15 +12,17 @@ const productos = [
     {
         id: "2", 
         nombre:"Adidas Big Trefoil Pant", 
+        marca:"Adidas",
         descripcion:"parte inferior", 
         descripcion2:"pantalon" , 
         precio:9890, 
-        stock:25,
+        stock:5,
         imagen:"../../imagenes/stock/pantalon2.jpeg",
     },
     {
         id: "3", 
         nombre:"Adidas Big Trefoil Tee", 
+        marca:"Adidas",
         descripcion:"parte superior", 
         descripcion2:"remera", 
         precio:8890, 
@@ -29,6 +32,7 @@ const productos = [
     {
         id: "4", 
         nombre:"Michigan x Nike Tee", 
+        marca:"Nike",
         descripcion:"parte superior", 
         descripcion2:"remera", 
         precio:10890, 
@@ -38,6 +42,7 @@ const productos = [
     {
         id: "5", 
         nombre:"Nike Vtg Puffer Jacket", 
+        marca:"Nike",
         descripcion:"parte superior", 
         descripcion2:"campera", 
         precio:77990, 
@@ -47,6 +52,7 @@ const productos = [
     {
         id: "6", 
         nombre:"Champion Spell Out Hoddie", 
+        marca:"Champion",
         descripcion:"parte superior", 
         descripcion2:"buzo", 
         precio:12490, 
@@ -56,42 +62,47 @@ const productos = [
     {
         id: "7", 
         nombre:"Nike Hoodie Alabama", 
+        marca:"Nike",
         descripcion:"parte superior", 
         descripcion2:"buzo", 
         precio:11890, 
-        stock:9,
+        stock:15,
         imagen:"../../imagenes/stock/buzo3.jpeg",
     },
     {
         id: "8", 
         nombre:"Helly Hansen Puffer Jacket", 
+        marca:"Otros",
         descripcion:"parte superior", 
         descripcion2:"campera", 
         precio:64890, 
-        stock:9,
+        stock:10,
         imagen:"../../imagenes/stock/campera1.jpeg",
     },
     {
         id: "9", 
         nombre:"Nike Big Swoosh", 
+        marca:"Nike",
         descripcion:"parte superior", 
         descripcion2:"buzo", 
         precio:9490, 
-        stock:9,
+        stock:7,
         imagen:"../../imagenes/stock/buzo2.jpeg",
     },
     {
         id: "10", 
         nombre:"Nike Tee EDD", 
+        marca:"Nike",
         descripcion:"parte superior", 
         descripcion2:"remera", 
         precio:8890, 
-        stock:9,
+        stock:2,
         imagen:"../../imagenes/stock/remera3.jpeg",
     },
     {
         id: "11", 
         nombre:"Champion Crewneck", 
+        marca:"Champion",
         descripcion:"parte superior", 
         descripcion2:"remera", 
         precio:9990, 
@@ -101,57 +112,54 @@ const productos = [
     {
         id: "12", 
         nombre:"The Nike Tee Flw", 
+        marca:"Nike",
         descripcion:"parte superior", 
         descripcion2:"remera", 
         precio:9990, 
-        stock:9,
+        stock:6,
         imagen:"../../imagenes/stock/remera1.jpeg",
     },
     {
         id: "13", 
         nombre:"Polo Ralph Lauren Hoddie Big Logo", 
+        marca:"Polo Ralph Lauren",
         descripcion:"parte superior", 
         descripcion2:"buzo", 
         precio:14490, 
-        stock:9,
+        stock:3,
         imagen:"../../imagenes/stock/buzo1.jpeg",
     },
     {
         id: "14", 
         nombre:"Hybrid Poetic Justice Tupac T-Shirt", 
+        marca:"Otros",
         descripcion:"parte superior", 
         descripcion2:"remera", 
         precio:9890, 
-        stock:9,
+        stock:11,
         imagen:"../../imagenes/stock/remera2.jpeg",
     },
     {
         id: "15", 
         nombre:"The North Face 700 Puffer Vest", 
+        marca:"The North Face",
         descripcion:"parte superior", 
         descripcion2:"chaleco", 
         precio:54490, 
-        stock:9,
+        stock:5,
         imagen:"../../imagenes/stock/chaleco1.jpeg",
     },
     {
         id: "16", 
         nombre:"The North Face 700 Hyvent Puffer Jacket", 
+        marca:"The North Face",
         descripcion:"parte superior", 
         descripcion2:"campera", 
         precio:96490, 
-        stock:9,
+        stock:1,
         imagen:"../../imagenes/stock/campera2.jpeg",
     },
 ];
 
 
 export default productos
-
-/* const getProducts = () => {
-    return new Promise ((resolve, reject) =>{
-        setTimeout(()=>{
-
-        }, 3000)
-    })
-} */

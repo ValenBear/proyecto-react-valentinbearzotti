@@ -6,18 +6,38 @@ nav .div-navs {
   justify-content: center;
   align-items: center;
 }
-nav .div-navs button {
+nav .div-navs .div-button {
+  display: flex;
+  flex-flow: wrap;
+}
+nav .div-navs .div-button button {
   background-color: black;
   border: none;
   height: 4vh;
-  font-size: 19px;
+  font-size: 1.2rem;
 }
-nav .div-navs button:hover {
+nav .div-navs .div-button button:hover {
   background-color: #000000;
   border: none;
-  color: rgb(20, 104, 34);
+  color: rgb(30, 187, 56);
 }
-nav .div-navs .dropdown button {
+nav .div-navs .div-button .dropdown button {
+  background-color: black;
+  border: none;
+  height: 4vh;
+}
+nav .div-navs .div-button .div-link a {
+  background-color: black;
+  border: none;
+  height: 4vh;
+  font-size: 1.2rem;
+}
+nav .div-navs .div-button .div-link a:hover {
+  background-color: #000000;
+  border: none;
+  color: rgb(30, 187, 56);
+}
+nav .div-navs .div-button .div-link .dropdown a {
   background-color: black;
   border: none;
   height: 4vh;
@@ -34,10 +54,11 @@ nav .div-navp {
   width: 100%;
   height: 10vh;
 }
-nav .div-navp h4 {
+nav .div-navp .tit {
   font-family: "Caprasimo", cursive;
   color: #fff;
-  font-size: 60px;
+  font-size: 4rem;
+  text-decoration: none;
 }
 nav .div-navp .div-navp-nombre {
   display: flex;
@@ -48,8 +69,20 @@ nav .div-navp .logo {
   margin-left: 1vw;
   margin-right: 0.2vw;
   border-radius: 100%;
-  height: 70px;
+  height: 8vh;
   width: auto;
+}
+
+footer {
+  font-weight: 400;
+  color: black;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+  opacity: 60%;
+  font-size: 1rem;
+  justify-content: center;
 }
 
 .div-container {
@@ -66,16 +99,16 @@ nav .div-navp .logo {
   align-items: center;
 }
 .div-cart img {
-  width: 50px;
-  height: 50px;
+  width: 3vw;
+  height: auto;
 }
 .div-cart span {
   display: flex;
   border-radius: 100%;
   background: white;
-  height: 20px;
-  width: 20px;
-  font-size: 20px;
+  height: 2.3vh;
+  width: 1vw;
+  font-size: 1.3rem;
   justify-content: center;
   align-items: center;
   margin-right: 1vw;
@@ -83,36 +116,43 @@ nav .div-navp .logo {
 }
 
 .div-producto {
-  width: 350px;
-  height: 550px;
+  width: 19vw;
+  height: 63vh;
   display: flex;
   flex-flow: wrap column;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 2vh 2vw;
   padding: 10px;
   background-color: rgb(104, 165, 115);
-  box-shadow: 1.5px 1.5px rgb(0, 0, 0);
+  outline: 0.5px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2.5px 2.5px rgb(0, 0, 0);
 }
 .div-producto h4 {
-  margin-top: 10px;
-  font-size: 24px;
+  margin-top: 1vh;
+  font-size: 1.5rem;
   text-align: center;
-  font-family: "Caprasimo", cursive;
   color: rgba(255, 255, 255, 0.95);
-  text-shadow: 1.5px 1.5px black;
+  text-shadow: 1px 1px black;
 }
 .div-producto .prd-precio {
+  font-family: "Caprasimo", cursive;
   text-align: center;
-  font-size: 17.5px;
+  font-size: 1.3rem;
   color: rgba(255, 255, 255, 0.95);
   margin: 0;
   text-shadow: 1px 1px black;
 }
 .div-producto img {
   height: auto;
-  width: 300px;
-  box-shadow: 1.5px 1.5px rgb(0, 0, 0);
+  width: 15vw;
+  outline: 0.5px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2.5px 2.5px rgb(0, 0, 0);
+}
+
+.div-itemCount div span {
+  padding: 1rem;
+  color: white;
 }
 
 * {
@@ -123,5 +163,9 @@ nav .div-navp .logo {
 }
 
 body {
-  background-color: rgba(245, 245, 220, 0.336);
+  background-color: rgb(248, 248, 238);
+}
+
+footer {
+  margin: 10px;
 }/*# sourceMappingURL=style.css.map */

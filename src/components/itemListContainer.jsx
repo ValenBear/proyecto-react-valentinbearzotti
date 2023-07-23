@@ -6,9 +6,14 @@ function renderItems (productos) {
     return (
       <Item
         key={item.id}
+        id={item.id}
         title={item.nombre}
         imagen={item.imagen}
         precio={item.precio}
+        marca={item.marca}
+        descripcion={item.descripcion}
+        descripcion2={item.descripcion2}
+        stock={item.stock}
       />
     )
   });
