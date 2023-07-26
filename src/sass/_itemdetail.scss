@@ -1,0 +1,47 @@
+.div-detailitem{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    img{
+        height: 50vh;
+        width: auto;
+        box-shadow: 2.5px 2.5px 10px rgba(0,0,0,25);
+    }
+    .div-details{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        height: 50vh;
+        width: 22.5vw;
+        padding: 1vh 1vw;
+        background-color: rgb(104, 165, 115);
+        box-shadow: 2.5px 2.5px 10px rgba(0,0,0,25);
+        h4{
+            margin: 1vh 0 5vh;
+            font-size: 1.65vw;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.950);
+            text-shadow: 1px 1px black;
+            font-family: 'Caprasimo', cursive;
+        }
+        .div-prd-precio{
+            .prd-precio{
+                font-weight: 600;
+                text-align: left;
+                font-size: 1.5vw;
+                color: rgba(255, 255, 255, 0.950);
+                margin: 0 3vh;
+                text-shadow: 1px 1px black;
+            }
+            .prd-precio-cuotas{
+                text-align: left;
+                font-size: 1vw;
+                color: rgba(255, 255, 255, 0.950);
+                margin: 0 1vw;
+            }
+        }
+    }
+}

@@ -1,4 +1,3 @@
-import '../sass/style.css';
 
 
 const CartWidget = () => {
@@ -8,7 +7,7 @@ const CartWidget = () => {
   return (
     <>
         <div className='div-cart'>
-        <img src="../imagenes/carrito.png" alt="carrito de compras" />
+        <img src="../img/carrito.png" alt="carrito de compras" />
         <span className='contador'>{contador}</span>
         </div>
     </>

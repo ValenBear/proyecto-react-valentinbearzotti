@@ -1,29 +1,53 @@
-import productos from '../mock/data';
-import Item from './item';
+import { useEffect, useState } from 'react';
+import { getProducts } from '../mock/data'; 
+import ItemList from './itemList';
+import { useParams } from 'react-router-dom';
 
-function renderItems (productos) {
-  const listItems = productos.map((item) => {
-    return (
-      <Item
-        key={item.id}
-        id={item.id}
-        title={item.nombre}
-        imagen={item.imagen}
-        precio={item.precio}
-        marca={item.marca}
-        descripcion={item.descripcion}
-        descripcion2={item.descripcion2}
-        stock={item.stock}
-      />
-    )
-  });
-  return listItems;
-}
 
-const ItemListContainer = () => {
+
+
+const ItemListContainer = ({greeting}) => {
+  
+  const [productos, setProductos]= useState([])
+
+  const {categoryId, categoryId2, marcaId}= useParams()
+
+  const [loading, setLoading] = useState(false)
+
+  useEffect(()=>{
+    setLoading(true)
+    getProducts()
+    .then((res)=> {
+      if (categoryId){
+      setProductos(res.filter((item)=> item.descripcion === categoryId));
+    } else if (categoryId2) {
+      setProductos(res.filter((item)=> item.descripcion2 === categoryId2));
+    } else if (marcaId) {
+      setProductos(res.filter((item)=> item.marca === marcaId));
+    } else {
+      setProductos(res);
+    }
+    })
+    .catch((error)=> console.log(error))
+    .finally(()=> setLoading(false))
+  },[categoryId, categoryId2, marcaId])
+  
+
+
   return (
     <div>
-      <div className='div-container'>{renderItems(productos)}</div>
+     { 
+      loading ? <p className='cargando'>Cargando...</p>
+      :
+      <div className='div-itemlistcontainer'>
+        
+        <h2 className='filter-tit'>{greeting}{<span className='filter-cat'>{categoryId && categoryId || categoryId2 && categoryId2 || marcaId && marcaId}</span>}</h2>
+
+        <ItemList
+        productos={productos}
+        />
+        </div>
+      }
     </div>
   )
 }

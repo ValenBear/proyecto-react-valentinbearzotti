@@ -1,7 +1,15 @@
-.div-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 5vh 5vw;
-    justify-content: center;
-    align-items: center;
+.div-itemlistcontainer{
+    .filter-tit{
+        text-align: center;
+        margin-top: 2vh;
+        color: black;
+        font-size: 1.5vw;
+        font-weight: 600;
+        .filter-cat{
+            font-family: 'Caprasimo', cursive;
+            color: rgb(25, 122, 41);
+            font-size: 1.5vw;
+            text-decoration: none;
+        }
+    }
 }

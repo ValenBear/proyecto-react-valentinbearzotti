@@ -1,15 +1,14 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import ItemDetailContainer from '../components/itemDetailContainer'
 
 
 
-const Detail = (producto) => {
-  const {id, marca, descripcion, descripcion2, imagen} = useParams ();
-  
+
+const Detail = () => { 
   return (
-    <div className="div-producto-detalle">
-      <div><img src={producto.imagen} alt="foto del producto"/></div>
-    </div>
+    <>
+    <ItemDetailContainer/>
+    </>
   )
 }
 

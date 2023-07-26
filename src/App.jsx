@@ -4,12 +4,10 @@ import {
   Routes,
   Route
 } from 'react-router-dom' ;
-import Home from './pages/Home/home';
 import Detail from './pages/detail';
 import NavBar from './components/navBar';
-import Nosotros from './pages/Nosotros/nosotros';
-
-const marcas = ["Nike", "Adidas", "Champion", "Polo Ralph Lauren", "The North Face", "Otros"];
+import Nosotros from './pages/nosotros';
+import ItemListContainer from './components/itemListContainer';
 
 function App() {
 
@@ -17,19 +15,33 @@ function App() {
 
     <BrowserRouter>
       <header>
-        <NavBar
-          items={marcas}
-        />
+        <NavBar/>
       </header>
       <main>
       <Routes>
         <Route
           exact
           path='/'
-          element={<Home/>}
+          element={<ItemListContainer
+          greeting="Bienvenido a BearDrops"/>}
         />
         <Route
-          path='/producto/:id/:marca/:descripcion/:descripcion2'
+          path='/category/:categoryId'
+          element={<ItemListContainer
+          greeting="Filtrado por: "/>}
+        />
+        <Route
+          path='/category2/:categoryId2'
+          element={<ItemListContainer
+            greeting="Filtrado por: "/>}
+        />
+        <Route
+          path='/marca/:marcaId'
+          element={<ItemListContainer
+            greeting="Filtrado por: "/>}
+        />
+        <Route
+          path='/detail/:id'
           element={<Detail/>}
         />
         <Route

@@ -1,0 +1,11 @@
+.div-detailcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 5vh 3vw;
+    background-color: rgb(247, 247, 241);
+    margin: 5vh 2vw;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+}
