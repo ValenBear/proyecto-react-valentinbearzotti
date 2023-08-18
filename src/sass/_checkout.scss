@@ -1,0 +1,25 @@
+.div-compfin{
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    justify-content: center;
+    margin: 5vh 0;
+    background-color:rgb(24, 122, 40) ;
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.5);
+    padding: 2vh 3vw;
+    h3{
+        color: rgb(247, 247, 241);
+        font-family: "Caprasimo", cursive;
+        font-size: 1.75vw;
+        text-shadow: 0.5px 0.5px 3px black;
+    }
+    h4{
+        color: rgb(247, 247, 241);
+        text-shadow: 1px 1px 3px black;
+        font-size: 1.2vw;
+    }
+}
+
+.div-form{
+
+}

@@ -27,6 +27,15 @@
             text-shadow: 1px 1px black;
             font-family: 'Caprasimo', cursive;
         }
+        .prd-btn{
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: center;
+            align-items: center;
+            .btn{
+                margin: 1vh 0.5vw;
+            }
+        }
         .div-prd-precio{
             .prd-precio{
                 font-weight: 600;

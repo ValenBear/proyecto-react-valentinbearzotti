@@ -14,7 +14,9 @@ const NavBar = (props) => {
           <Link to='/' className="tit">
             BearDrops
           </Link>
-        <CartWidget/>
+          <NavLink style={{textDecoration: 'none'}} to='/cart'>
+            <CartWidget/>
+          </NavLink>
       </div>
       <div className='div-navs'>
         <div className="dropdown div-button">

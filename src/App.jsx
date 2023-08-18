@@ -6,13 +6,24 @@ import {
 } from 'react-router-dom' ;
 import Detail from './pages/detail';
 import NavBar from './components/navBar';
-import Nosotros from './pages/nosotros';
+import Cart from './components/cart';
 import ItemListContainer from './components/itemListContainer';
+import { CartProvider } from './context/CartContext';
+import React, { useEffect } from "react"
+import { addDoc, collection } from 'firebase/firestore';
+import { db } from './service/firebase';
+import { listProductos } from "./mock/data"
+import CheckOut from './components/checkOut';
 
 function App() {
 
-  return (
+/* useEffect(()=>{
+  const colectionProductos = collection(db, "productos")
+  listProductos.map((item)=> addDoc(colectionProductos, item))
+},[]) */
 
+  return (
+    <CartProvider>
     <BrowserRouter>
       <header>
         <NavBar/>
@@ -45,8 +56,12 @@ function App() {
           element={<Detail/>}
         />
         <Route
-          path='/nosotros'
-          element={<Nosotros/>}
+          path='/cart'
+          element={<Cart/>}
+        />
+        <Route
+          path='/checkout'
+          element={<CheckOut/>}
         />
       </Routes>
       </main>
@@ -58,6 +73,7 @@ function App() {
           </div>
         </footer>
     </BrowserRouter>
+    </CartProvider>
   )
 }
 

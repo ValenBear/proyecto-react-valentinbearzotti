@@ -1,0 +1,42 @@
+.div-cartlist{
+    margin: 3vh 0;
+    padding: 1vh 0;
+    width: 80vw;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 247, 241);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+    .ttl-pgr{
+        font-family: 'Caprasimo', cursive;
+        text-align: center;
+        font-size: 1.3vw;
+        color: rgba(0, 0, 0, 0.85);
+    }
+    .div-cart-btn{
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: center;
+        align-items: center;
+        button{
+            margin: 1vh 0.5vw;
+        }
+    }
+}
+.div-cartvacio{
+    margin: 5vh 0;
+    width: 25vw;
+    height: 15vh;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.5px 0.5px 5px rgba(0,0,0,25);
+    background-color: white;
+    p{
+        text-align: center;
+        font-family: 'Caprasimo', cursive;
+        font-size: 1.6vw;
+    }
+}

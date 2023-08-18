@@ -2,6 +2,7 @@
     display: flex;
     flex-flow: wrap;
     align-items: center;
+    margin-right: 1vw;
     img{
         width: 3vw;
         height: auto;
@@ -9,11 +10,11 @@
     span{
         display: flex;
         border-radius: 100%;
-        background: rgba(255, 0, 0, 0.85);
+        background: rgba(255, 0, 0, 0.85) !important;
         height: 2.3vh;
         width: 1vw;
         padding: 0.75vw;
-        font-size: 1.2vw;
+        font-size: 1vw;
         justify-content: center;
         align-items: center;
         margin-right: 1vw;

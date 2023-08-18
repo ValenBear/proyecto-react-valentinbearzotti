@@ -126,6 +126,7 @@ nav .div-navp .logo {
   display: flex;
   flex-flow: wrap;
   align-items: center;
+  margin-right: 1vw;
 }
 .div-cart img {
   width: 3vw;
@@ -134,11 +135,11 @@ nav .div-navp .logo {
 .div-cart span {
   display: flex;
   border-radius: 100%;
-  background: rgba(255, 0, 0, 0.85);
+  background: rgba(255, 0, 0, 0.85) !important;
   height: 2.3vh;
   width: 1vw;
   padding: 0.75vw;
-  font-size: 1.2vw;
+  font-size: 1vw;
   justify-content: center;
   align-items: center;
   margin-right: 1vw;
@@ -259,6 +260,15 @@ nav .div-navp .logo {
   text-shadow: 1px 1px black;
   font-family: "Caprasimo", cursive;
 }
+.div-detailitem .div-details .prd-btn {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  align-items: center;
+}
+.div-detailitem .div-details .prd-btn .btn {
+  margin: 1vh 0.5vw;
+}
 .div-detailitem .div-details .div-prd-precio .prd-precio {
   font-weight: 600;
   text-align: left;
@@ -284,6 +294,96 @@ nav .div-navp .logo {
   background-color: rgb(247, 247, 241);
   margin: 5vh 2vw;
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.div-cartlist {
+  margin: 3vh 0;
+  padding: 1vh 0;
+  width: 80vw;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(247, 247, 241);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+}
+.div-cartlist .ttl-pgr {
+  font-family: "Caprasimo", cursive;
+  text-align: center;
+  font-size: 1.3vw;
+  color: rgba(0, 0, 0, 0.85);
+}
+.div-cartlist .div-cart-btn {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  align-items: center;
+}
+.div-cartlist .div-cart-btn button {
+  margin: 1vh 0.5vw;
+}
+
+.div-cartvacio {
+  margin: 5vh 0;
+  width: 25vw;
+  height: 15vh;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.5px 0.5px 5px rgb(0, 0, 0);
+  background-color: white;
+}
+.div-cartvacio p {
+  text-align: center;
+  font-family: "Caprasimo", cursive;
+  font-size: 1.6vw;
+}
+
+.div-cartitem {
+  background-color: rgb(104, 165, 115);
+  outline: 0.5px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2.5px 2.5px rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60vw;
+  padding: 1vh 0;
+  margin: 2vh 0;
+}
+.div-cartitem .cartitem-img {
+  height: 15vh;
+  width: auto;
+  outline: 0.125px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0.5px 0.5px 10px rgb(0, 0, 0);
+}
+.div-cartitem p {
+  color: white;
+  font-size: 1vw;
+  font-weight: 600;
+  text-shadow: 0.5px 0.5px black;
+}
+
+.div-compfin {
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  justify-content: center;
+  margin: 5vh 0;
+  background-color: rgb(24, 122, 40);
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.5);
+  padding: 2vh 3vw;
+}
+.div-compfin h3 {
+  color: rgb(247, 247, 241);
+  font-family: "Caprasimo", cursive;
+  font-size: 1.75vw;
+  text-shadow: 0.5px 0.5px 3px black;
+}
+.div-compfin h4 {
+  color: rgb(247, 247, 241);
+  text-shadow: 1px 1px 3px black;
+  font-size: 1.2vw;
 }
 
 * {
