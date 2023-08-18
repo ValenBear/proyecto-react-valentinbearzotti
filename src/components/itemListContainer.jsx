@@ -16,24 +16,7 @@ const ItemListContainer = ({greeting}) => {
 
   const [loading, setLoading] = useState(false)
 
-/*   useEffect(()=>{
-    setLoading(true)
-    getProducts()
-    .then((res)=> {
-      if (categoryId){
-      setProductos(res.filter((item)=> item.descripcion === categoryId));
-    } else if (categoryId2) {
-      setProductos(res.filter((item)=> item.descripcion2 === categoryId2));
-    } else if (marcaId) {
-      setProductos(res.filter((item)=> item.marca === marcaId));
-    } else {
-      setProductos(res);
-    }
-    })
-    .catch((error)=> console.log(error))
-    .finally(()=> setLoading(false))
-  },[categoryId, categoryId2, marcaId]) */
-  
+
   useEffect(()=>{
     setLoading(true)
     const coleccionProductos = categoryId ? query(collection(db, "productos"), where("descripcion", "==", categoryId)) : categoryId2 ? query(collection(db, "productos"), where("descripcion2", "==", categoryId2)) : marcaId ? query(collection(db, "productos"), where("marca", "==", marcaId)) : collection(db, "productos")

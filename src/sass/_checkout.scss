@@ -20,6 +20,36 @@
     }
 }
 
-.div-form{
-
+.div-checkout{
+    margin: 3vh 3vw;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 247, 241);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+    padding: 1vh 1vw;
+    h2{
+        color: rgb(24, 122, 40);
+        font-family: "Caprasimo", cursive;
+        font-size: 2.5vw;
+    }
+    h4{
+        font-size: 1.25vw;
+    }
+    .div-form{
+        display: flex;
+        flex-flow: wrap column;
+        align-items: center;
+        justify-content: center;
+        div{
+            label{
+                color: #000;
+                font-size: 1vw;
+            }
+        }
+        .btn{
+            margin: 1vw 0 0 0;
+        }
+    }
 }
